@@ -7,9 +7,7 @@
 
 import SwiftUI
 
-class  BackgroundThreadViewModel: ObservableObject {
-    @Published var dataArray: [String] = []
-}
+
 
 struct ContentView: View {
     @StateObject var vm = BackgroundThreadViewModel()
@@ -19,10 +17,12 @@ struct ContentView: View {
                 Text("LOAD DATA")
                     .font(.largeTitle)
                     .fontWeight(.semibold)
-                ForEach(vm.dataArray, id: \.self){item in
+                    .onTapGesture {
+                        vm.fetchData()
+                    }
+                ForEach(vm.dataArray, id: \.self){ item in
                     Text(item)
-                    
-                }
+                 }
             }
         }
       

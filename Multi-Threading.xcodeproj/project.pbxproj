@@ -14,6 +14,7 @@
 		4932379E2987E705003D1BD9 /* Multi_ThreadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932379D2987E705003D1BD9 /* Multi_ThreadingTests.swift */; };
 		493237A82987E705003D1BD9 /* Multi_ThreadingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493237A72987E705003D1BD9 /* Multi_ThreadingUITests.swift */; };
 		493237AA2987E705003D1BD9 /* Multi_ThreadingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493237A92987E705003D1BD9 /* Multi_ThreadingUITestsLaunchTests.swift */; };
+		493237B72987F1BF003D1BD9 /* BackgroundThreadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493237B62987F1BF003D1BD9 /* BackgroundThreadViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		493237A32987E705003D1BD9 /* Multi-ThreadingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Multi-ThreadingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		493237A72987E705003D1BD9 /* Multi_ThreadingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multi_ThreadingUITests.swift; sourceTree = "<group>"; };
 		493237A92987E705003D1BD9 /* Multi_ThreadingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multi_ThreadingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		493237B62987F1BF003D1BD9 /* BackgroundThreadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundThreadViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		4932378B2987E702003D1BD9 /* Multi-Threading */ = {
 			isa = PBXGroup;
 			children = (
+				493237B62987F1BF003D1BD9 /* BackgroundThreadViewModel.swift */,
 				4932378C2987E702003D1BD9 /* Multi_ThreadingApp.swift */,
 				4932378E2987E702003D1BD9 /* ContentView.swift */,
 				493237902987E704003D1BD9 /* Assets.xcassets */,
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4932378F2987E702003D1BD9 /* ContentView.swift in Sources */,
+				493237B72987F1BF003D1BD9 /* BackgroundThreadViewModel.swift in Sources */,
 				4932378D2987E702003D1BD9 /* Multi_ThreadingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
