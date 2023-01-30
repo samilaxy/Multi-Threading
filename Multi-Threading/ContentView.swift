@@ -13,7 +13,7 @@ struct ContentView: View {
     @StateObject var vm = BackgroundThreadViewModel()
     var body: some View {
         ScrollView{
-            VStack(spacing: 10){
+            LazyVStack(spacing: 10){
                 Text("LOAD DATA")
                     .font(.largeTitle)
                     .fontWeight(.semibold)
