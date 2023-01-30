@@ -7,15 +7,25 @@
 
 import SwiftUI
 
+class  BackgroundThreadViewModel: ObservableObject {
+    @Published var dataArray: [String] = []
+}
+
 struct ContentView: View {
+    @StateObject var vm = BackgroundThreadViewModel()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ScrollView{
+            VStack(spacing: 10){
+                Text("LOAD DATA")
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+                ForEach(vm.dataArray, id: \.self){item in
+                    Text(item)
+                    
+                }
+            }
         }
-        .padding()
+      
     }
 }
 
